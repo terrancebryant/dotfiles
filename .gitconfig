@@ -1,0 +1,9 @@
+[user]
+  name = Terrance Bryant
+  email = terrancebryant85@gmail.com
+
+[github]
+  user = terrancebryant
+
+[core]
+  excludefiles = ~/.gitignore_global
