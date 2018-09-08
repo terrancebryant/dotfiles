@@ -31,3 +31,52 @@ alias ips="ifconfig -a | grep -o 'inet6\? \(addr:\)\?\s\?\(\(\([0-9]\+\.\)\{3\}[
 
 # Prevent ZSH from throwing autocorrect for weird-looking Sass commands
 alias sass='nocorrect sass'
+
+# These need work
+alias ll='ls -lh'
+alias la='ls -la'
+alias l='ls'
+alias lls='ll -Sr'
+alias less='less -imJMW'
+alias tmux="TERM=screen-256color-bce tmux"  # Fix tmux making vim colors funky
+alias ..='cd ..'
+alias ...='cd ../..'
+alias ....='cd ../../..'
+alias .....='cd ../../../..'
+alias ping='ping -c 5'
+alias startdb='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias stopdb='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+alias gs='git status'
+alias gd='git diff'
+alias gc='git commit'
+
+alias gca='git commit --amend'
+alias go="git checkout"
+alias gr='git reset HEAD~'
+alias push='git push origin master'
+alias gpush='git push'
+alias pushf='git push --force-with-lease'
+alias pull='git pull --rebase'
+
+alias ts='tig status'
+alias tmuxh='tmux attach -t host-session || tmux new-session -s host-session'
+alias tmuxp='tmux attach -t pair-session || tmux new-session -t host-session -s pair-session'
+alias rogue='tmux switch-client -t "pair-session"; tmux display-message "Entering Rogue Mode"'
+alias buddy='tmux switch-client -t "host-session"; tmux display-message "Entering Buddy Mode"'
+alias delete_pyc='find . -name \*.pyc -exec rm \{\} \+'
+alias c='clear'
+
+alias es='ember s'
+alias et='ember t -s'
+alias etf='ember t -s -f'
+alias ett='ember t -s -f terrance'
+alias ni='npm install'
+
+alias oldboom="npm cache clear && bower cache clean && rm -rf node_modules bower_components && npm install && bower install"
+alias boom="bower cache clean && rm -rf node_modules bower_components && npm install && bower install"
+
+alias workspace="cd ~/Documents/workspace/"
+
+alias gbr="git branch | grep -v "master" | xargs git branch -D"
+
+alias log="git log --pretty=oneline"

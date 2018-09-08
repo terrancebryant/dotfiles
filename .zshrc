@@ -29,4 +29,4 @@ SPACESHIP_DOCKER_SHOW=false
 # Sourcing oh-my-zsh and other shell helpers
 source $ZSH/oh-my-zsh.sh
 source $HOME/.zsh_exports
-source $HOME/.zsh_aliase
+source $HOME/.zsh_aliases
